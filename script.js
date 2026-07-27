@@ -136,6 +136,16 @@ function submitMaintenance() {
 const registrationForm = document.getElementById("registrationForm");
 
 if (registrationForm) {
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventName = urlParams.get("event");
+
+    const selectedEvent = document.getElementById("selectedEvent");
+
+    if (selectedEvent && eventName) {
+        selectedEvent.textContent = "Registering for: " + eventName;
+    }
+
     registrationForm.addEventListener("submit", function(event) {
 
         event.preventDefault();
@@ -144,7 +154,8 @@ if (registrationForm) {
 
         message.innerHTML = `
             🎉 Registration Successful!<br>
-            You have successfully registered for the Hackathon.
+            You have successfully registered for the 
+            <strong>${eventName || "event"}</strong>.
         `;
 
         message.style.marginTop = "20px";
