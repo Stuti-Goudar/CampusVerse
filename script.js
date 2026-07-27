@@ -1,3 +1,4 @@
+//java
 function checkCampus() {
     const campus = document.getElementById("campusInput").value.toLowerCase().trim();
     const message = document.getElementById("message");
