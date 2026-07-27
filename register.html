@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | CampusVerse-AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <div class="register-box">
+
+            <h1>CampusVerse-AI</h1>
+
+            <h2>Student Registration</h2>
+
+            <p>Register for upcoming campus opportunities</p>
+
+            <form id="registrationForm">
+
+                <label for="name">Full Name</label>
+
+                <input 
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+
+                <input 
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+                <label for="year">Year of Degree</label>
+
+                <select id="year" required>
+                    <option value="">Select your year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                </select>
+
+                <label for="branch">Branch / Department</label>
+
+                <input 
+                    type="text"
+                    id="branch"
+                    placeholder="Example: Computer Science and Engineering"
+                    required
+                >
+
+                <label for="college">College Name</label>
+
+                <input 
+                    type="text"
+                    id="college"
+                    placeholder="Enter your college name"
+                    required
+                >
+
+                <button type="submit">
+                    Register for Hackathon
+                </button>
+
+            </form>
+
+            <p id="registrationMessage"></p>
+
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
