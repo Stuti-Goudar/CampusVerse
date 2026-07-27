@@ -128,3 +128,27 @@ function submitMaintenance() {
     // Clear form fields
     document.getElementById("maintenanceForm").reset();
 }
+// ================================
+// REGISTRATION FORM
+// ================================
+
+const registrationForm = document.getElementById("registrationForm");
+
+if (registrationForm) {
+    registrationForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const message = document.getElementById("registrationMessage");
+
+        message.innerHTML = `
+            🎉 Registration Successful!<br>
+            You have successfully registered for the Hackathon.
+        `;
+
+        message.style.marginTop = "20px";
+        message.style.fontWeight = "bold";
+
+        registrationForm.reset();
+    });
+}
