@@ -23,7 +23,7 @@
 
             <p>Register for upcoming campus opportunities</p>
 
-            <form id="registrationForm">
+           <form id="registrationForm" onsubmit="event.preventDefault(); document.getElementById('registrationMessage').innerHTML='🎉 You have successfully registered for the event!';">
 
                 <label for="name">Full Name</label>
 
