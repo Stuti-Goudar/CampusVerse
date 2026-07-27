@@ -149,6 +149,7 @@ if (registrationForm) {
     registrationForm.addEventListener("submit", function(event) {
 
         event.preventDefault();
+        alert("Submit is working!");
 
         const message = document.getElementById("registrationMessage");
 
