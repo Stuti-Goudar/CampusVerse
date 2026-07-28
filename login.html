@@ -44,6 +44,17 @@
         </div>
 
     </div>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
+    document.getElementById("loginMessage").innerHTML =
+        "🎉 You have successfully logged in!";
+
+    document.getElementById("loginMessage").style.marginTop = "20px";
+    document.getElementById("loginMessage").style.fontWeight = "bold";
+    document.getElementById("loginMessage").style.color = "green";
+});
+</script>
 </body>
 </html> 
